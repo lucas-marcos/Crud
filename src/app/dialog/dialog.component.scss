@@ -1,0 +1,14 @@
+.tabela{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 28px;
+}
+

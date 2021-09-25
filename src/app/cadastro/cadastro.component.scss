@@ -1,0 +1,17 @@
+.botao {
+  width: auto;
+  height: auto;
+  text-align: end;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+}
+
+.excluir button {
+  width: 35px;
+  height: 35px;
+  margin-left: 50%;
+}

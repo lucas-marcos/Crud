@@ -1,0 +1,42 @@
+<div class="container pt-4 pb-4">
+<div class="tabela">
+  <div class="botao">
+    <button mat-raised-button color="primary" (click)="openDialog()">Adicionar</button>
+  </div>
+  <div class="table-responsive">
+    <div class="caixa">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Bairro</th>
+            <th scope="col">Rua</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cliente of clients">
+            <td>{{ cliente.nome }}</td>
+            <td>{{ cliente.cpf }}</td>
+            <td>{{ cliente.bairro }}</td>
+            <td>{{ cliente.rua }}</td>
+            <td>
+              <div class="excluir">
+                <button
+                mat-mini-fab
+                color="white"
+                aria-label="Excluir"
+                (click)="removerLinha(clients.indexOf(cliente))"
+
+                >
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
